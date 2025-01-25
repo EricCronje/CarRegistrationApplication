@@ -105,6 +105,7 @@ webpack compiled successfully
 - **Options:** Enable the "Skip Negotiations" option.
 - **Service Frequency:** Runs every 3 seconds during testing. For production, adjust the interval to 1 minute.
 
+![Screenshot](https://github.com/EricCronje/CarRegistrationApplication/blob/main/SIgnalR_Test.png?raw=true)
 ---
 
 ## Screenshots
