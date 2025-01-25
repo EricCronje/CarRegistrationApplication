@@ -80,4 +80,4 @@ http://localhost:3000/registration	- using the SignalR link https://localhost:72
 
 ### Screen shots
 
-![alt text](https://github.com/EricCronje/CarRegistrationApplication/[main/Results.png?raw=true)
+![alt text](https://github.com/EricCronje/CarRegistrationApplication/blob/main/Results.png?raw=true)
