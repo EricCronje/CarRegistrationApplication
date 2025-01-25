@@ -79,5 +79,3 @@ http://localhost:3000/				- using the link https://localhost:7216/api/cars
 http://localhost:3000/registration	- using the SignalR link https://localhost:7216/registrationHub
 
 
-# Data returned
-For this demonstration there are three cars.
