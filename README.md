@@ -78,4 +78,6 @@ This is a bit fast for production - would then set it every 1 minute.
 http://localhost:3000/				- using the link https://localhost:7216/api/cars
 http://localhost:3000/registration	- using the SignalR link https://localhost:7216/registrationHub
 
+### Screen shots
 
+![alt text](https://github.com/EricCronje/CarRegistrationApplication/[main/Results.png?raw=true)
