@@ -12,7 +12,7 @@ const Registration = () => {
               ? `${process.env.REACT_APP_PROXY_URL}/registrationHub`
               : '/registrationHub';
         const connection = new HubConnectionBuilder()
-            .withUrl('https://localhost:7216/registrationHub', {
+            .withUrl(hubUrl, {
                 transport: HttpTransportType.WebSockets,
                 skipNegotiation: true,
             })
