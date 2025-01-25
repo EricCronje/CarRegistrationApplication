@@ -1,21 +1,41 @@
-# CarRegistrationApplication
-This is a demonstration of a full stack application. 
-With a C# 8 back-end and a React front-end.
+# Car Registration Application
 
-In order to run the applictation. Both the C# back-end and the frontend application must be running.
-# Initial install (Fron-end)
-Please run "npm install react-scripts" in the "car-registration-frontend" directory in the command prompt.
+This repository demonstrates a full-stack application with a **C# 8 back-end** and a **React front-end**.
 
-# To run the applications
-Open two command windows.
+---
 
-## First command window
-In the first windows - browse to the backend implementation
-... CarRegistrationApplication\CarRegistrationApp>dotnet run
-And run "dotnet run". Please ensure that you have c# 8.0 installed.
+## Prerequisites
+- C# 8.0
+- Node.js and npm
 
-### Expected output:
+Both the back-end and front-end applications must be running for the system to function properly.
 
+---
+
+## Initial Setup (Front-end)
+1. Navigate to the `car-registration-frontend` directory.
+2. Install required dependencies by running:
+   ```bash
+   npm install react-scripts
+   ```
+
+---
+
+## Running the Application
+### Step 1: Start the Back-end
+1. Open a command window.
+2. Navigate to the back-end implementation directory:
+   ```bash
+   CarRegistrationApplication\CarRegistrationApp
+   ```
+3. Start the back-end application:
+   ```bash
+   dotnet run
+   ```
+4. Ensure that C# 8.0 is installed on your system.
+
+#### Expected Output:
+```plaintext
 C:\Working\CarRegistrationApplication\CarRegistrationApp>dotnet run
 Using launch settings from C:\Working\CarRegistrationApplication\CarRegistrationApp\Properties\launchSettings.json...
 Building...
@@ -29,13 +49,21 @@ info: Microsoft.Hosting.Lifetime[0]
       Hosting environment: Development
 info: Microsoft.Hosting.Lifetime[0]
       Content root path: C:\Working\CarRegistrationApplication\CarRegistrationApp
+```
 
-## Second command window
+### Step 2: Start the Front-end
+1. Open a second command window.
+2. Navigate to the front-end implementation directory:
+   ```bash
+   C:\_FLAP03\GBZZBEBJ\Working\dotnet\CarRegistrationApplication\car-registration-frontend
+   ```
+3. Start the front-end application:
+   ```bash
+   npm start
+   ```
 
-Browse to the front-end part.
-
-### Expected output:
-
+#### Expected Output:
+```plaintext
 Microsoft Windows [Version 10.0.26100.2894]
 (c) Microsoft Corporation. All rights reserved.
 
@@ -55,29 +83,31 @@ Note that the development build is not optimized.
 To create a production build, use npm run build.
 
 webpack compiled successfully
+```
 
+---
 
-# The Backend Links:
-This is the link to C# 8 backend without a filter:
-https://localhost:7216/api/cars
+## Application Links
 
-Link with a filter:
-https://localhost:7216/api/cars?make=Tesla
+### Back-end Links
+- **API without a filter:** [https://localhost:7216/api/cars](https://localhost:7216/api/cars)
+- **API with a filter (e.g., Tesla):** [https://localhost:7216/api/cars?make=Tesla](https://localhost:7216/api/cars?make=Tesla)
+- **SignalR Service:** [https://localhost:7216/registrationHub](https://localhost:7216/registrationHub)
 
-There is also a background SignalR service:
-https://localhost:7216/registrationHub
+### Front-end Links
+- **Home:** [http://localhost:3000/](http://localhost:3000/) (uses `https://localhost:7216/api/cars`)
+- **Registration Page:** [http://localhost:3000/registration](http://localhost:3000/registration) (uses `https://localhost:7216/registrationHub`)
 
-# Tested the signalR with:
-Tested the signalR with this utility:
-https://gourav-d.github.io/SignalR-Web-Client/dist/
-with the skip Negotioations option.
-The background service is running every 3 seconds.
-This is a bit fast for production - would then set it every 1 minute.
+---
 
-# The Frontend Links:
-http://localhost:3000/				- using the link https://localhost:7216/api/cars
-http://localhost:3000/registration	- using the SignalR link https://localhost:7216/registrationHub
+## SignalR Testing
+- **Testing Tool:** [SignalR Web Client](https://gourav-d.github.io/SignalR-Web-Client/dist/)
+- **Options:** Enable the "Skip Negotiations" option.
+- **Service Frequency:** Runs every 3 seconds during testing. For production, adjust the interval to 1 minute.
 
-### Screen shots
+---
 
-![alt text](https://github.com/EricCronje/CarRegistrationApplication/blob/main/Results.png?raw=true)
+## Screenshots
+For a visual demonstration, refer to the screenshot below:
+
+![Screenshot](https://github.com/EricCronje/CarRegistrationApplication/blob/main/Results.png?raw=true)
