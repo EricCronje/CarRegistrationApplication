@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { HubConnectionBuilder, LogLevel, HttpTransportType } from '@microsoft/signalr';
+import './Style.css'; // Import the CSS file
 
 const Registration = () => {
     const [statuses, setStatuses] = useState({});

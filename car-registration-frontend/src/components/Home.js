@@ -1,5 +1,5 @@
-// Frontend: React
 import React, { useEffect, useState } from 'react';
+import './Style.css'; // Import the CSS file
 
 const Home = () => {
     const [cars, setCars] = useState([]);
@@ -8,7 +8,9 @@ const Home = () => {
         fetch('/api/cars')
             .then(response => response.json())
             .then(data => setCars(data))
-			.catch(rejected => {console.log(rejected)})
+            .catch(rejected => {
+                console.log(rejected);
+            });
     }, []);
 
     return (
