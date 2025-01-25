@@ -17,6 +17,7 @@ const Home = () => {
         <table>
             <thead>
                 <tr>
+                    <th>Id</th>				
                     <th>Make</th>
                     <th>Model</th>
                     <th>Registration Expiry</th>
@@ -25,6 +26,7 @@ const Home = () => {
             <tbody>
                 {cars.map(car => (
                     <tr key={car.id}>
+						<td>{car.id}</td>
                         <td>{car.make}</td>
                         <td>{car.model}</td>
                         <td>{new Date(car.registrationExpiry).toLocaleDateString()}</td>
